@@ -19,6 +19,7 @@ public class ToolTip {
 		act.moveToElement(btn).perform();
 		String toolTip=driver.findElement(By.xpath("//div[text()='You hovered over the Button']")).getText();
 		System.out.println(toolTip);
+		System.out.println("Successfull");
 		Thread.sleep(2000);
 		driver.close();
 	}
